@@ -11,11 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-
 Route::get('produto', ['as' => 'produtos.index', 'uses' => 'Admin\ProdutoController@index']);
 Route::get('produto/novo', ['as' => 'produtos.create', 'uses' => 'Admin\ProdutoController@create']);
 Route::post('produto', ['as' => 'produtos.store', 'uses' => 'Admin\ProdutoController@store']);
