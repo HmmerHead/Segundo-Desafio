@@ -6,11 +6,18 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Produto;
 
+/**
+* Os dados que serão exibidos nas View's, encontram-se em 
+*  resources/views/admin/produto/
+* 
+*/
+
 class ProdutoController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Função que buscará os dados e exibirá uma listagem de produtos
+     * Na View: index.blade.php
+     * 
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,7 +27,8 @@ class ProdutoController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Função retorna o formulário para cadastro
+     * View: create.blade.php
      *
      * @return \Illuminate\Http\Response
      */
@@ -31,7 +39,7 @@ class ProdutoController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Função para armazenar os dados do formulário
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -57,19 +65,8 @@ class ProdutoController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
+     * Função retorna o formulário para edição
+     * View: edit.blade.php
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -81,7 +78,7 @@ class ProdutoController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Função para editar os dados do formulário
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -109,7 +106,7 @@ class ProdutoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Função remover o produto
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
