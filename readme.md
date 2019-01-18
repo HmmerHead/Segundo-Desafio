@@ -6,3 +6,7 @@ obs.: Foram colocadas algumas seeds para que seja possível testar as funcionali
 Para tanto use o seguinte código
 
 php artisan migrate --seed
+
+As rotas criadas encontram-se em: 'routes/web.php'
+
+Os controlador criado encontra-se em 'app\Http\Controllers\Admin'
